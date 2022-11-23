@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asets/style.css">
+    <link rel="shortcut icon" href="./asets/images/logo.jpeg" type="image/x-icon">
+    <!-- ionicon -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- alpine js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>UTMClean Shoes</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container max-w-7xl px-8 md:px-6">
+            <div class="items-center flex justify-between relative">
+                <div class="w-[4rem] max-w-full">
+                    <a href="#home" class="flex items-center">
+                        <img src="./asets/images/logo.jpeg" alt="logo" class="w-full">
+                        <h3 class="pl-2 font-bold text-xl text-primary">
+                            <span class="text-dark dark:text-white">UTM</span>CLEAN
+
+                        </h3>
+                    </a>
+                </div>
+                
+                <div class="px-4 flex items-center">
+                    <button id="hamburger" name="hamburger" type="button" 
+                            class="block absolute right-4 lg:hidden">
+                        <span class="baris-hamburger origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="baris-hamburger transition duration-300 ease-in-out"></span>
+                        <span class="baris-hamburger origin-bottom-left transition duration-300 ease-in-out"></span>
+                    </button>
+                </div>
+
+                <nav id="nav-menu" class="hidden absolute bg-white rounded-lg shadow-lg
+                        max-w-[250px] right-4 w-full py-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-3xl
+                        lg:rounded-none lg:shadow-none dark:bg-dark dark:shadow-slate-600 lg:dark:bg-transparent">
+                    <ul class="block lg:flex">
+                        <li class="group">
+                            <a href="#home" class="flex mx-5 py-2 text-base
+                             text-dark group-hover:text-primary dark:text-white">Home</a>
+                        </li>
+                        <li class="group">
+                            <a href="#about" class="flex mx-5 py-2 text-base
+                             text-dark group-hover:text-primary dark:text-white">About</a>
+                        </li>
+                        <li class="group">
+                            <a href="#pelayanan" class="flex mx-5 py-2 text-base
+                             text-dark group-hover:text-primary dark:text-white">Pelayanan</a>
+                        </li>
+                        <li class="group">
+                            <a href="#protofolio" class="flex mx-5 py-2 text-base
+                             text-dark group-hover:text-primary dark:text-white">Protofolio</a>
+                        </li>
+                        <li class="group">
+                            <a href="#testimoni" class="flex mx-5 py-2 text-base
+                             text-dark group-hover:text-primary dark:text-white">Testimoni</a>
+                        </li>
+                        <li class="group">
+                            <a href="#contact" class="flex mx-5 py-2 text-base
+                             text-dark group-hover:text-primary dark:text-white">Contact</a>
+                        </li>
+                        <li class="mt-2 flex items-center lg:mt-0">
+                            <div class="flex mx-5">
+                                <span class="mr-2 text-base text-dark dark:text-white">
+                                    <ion-icon name="sunny"></ion-icon>
+                                </span>
+                                <input id="dark-toggle" class="hidden" type="checkbox">
+                                <label for="dark-toggle">
+                                    <div class="flex h-5 w-9 cursor-pointer items-center 
+                                    rounded-full bg-slate-500">
+                                        <div class="toggle-circle h-4 w-4 rounded-full bg-white 
+                                        transition duration-200 ease-in-out"></div>
+                                    </div>
+                                </label>
+                                <span class="ml-2 text-base text-dark dark:text-white">
+                                    <ion-icon name="moon"></ion-icon>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Hero section -->
+    <section id="home" class="pt-36 relative bg-white py-16 dark:bg-dark">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-5/12">
+                    <h1 class="font-bold text-dark text-4xl 
+                    leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px] dark:text-white">
+                        Membersihkan kotoran tanpa merusak 
+                        <span class="text-primary lg:block"> Sepatu. </span>
+                    </h1>
+                    <p class="text-base text-justify text-slate-500 max-w-[480px] mb-8">
+                        kami mendapati begitu banyak orang yang kurang mengenali jenis sepatu dan mereka juga mengalami kendala dalam membersihkan sepatu. 
+                        Sehingga kita membuka jasa pencucian yang dilakukan secara professional. 
+                        mari kita mulai dengan jenis-jenis/bahan sepatu (terlepas dari apapun brand nya).
+                    </p>
+
+                    <button type="button" class="bg-primary rounded-md px-8 w-full
+                    py-2.5 font-semibold text-base text-white hover:shadow-lg 
+                    hover:opacity-70 transition duration-200 ease-in-out sm:w-auto">
+                        Get Strated
+                    </button>
+
+                    <button type="button" class="mt-4 box-border px-8 py-2.5 w-full text-primary
+                        rounded-md text-base font-semibold border border-primary shadow-md 
+                        hover:shadow-lg hover:bg-slate-800 hover:opacity-30 
+                        transition duration-200 ease-in-out sm:ml-4 sm:mt-0 sm:w-auto">
+                        Register
+                    </button>
+
+                    <!-- brand sepatu -->
+                    <div class="mt-6 flex flex-wrap gap-4">
+                        <img src="./asets/images/ventela.png" alt="ventela"
+                        class="w-32 cursor-pointer px-8 py-2.5 border rounded-lg bg-white border-primary
+                        shadow-md hover:shadow-primary duration-200 hover:scale-95 sm:w-36">
+                        
+                        <img src="./asets/images/saba2.jpg" alt="ventela"
+                        class="w-32 cursor-pointer px-8 py-2.5 border rounded-lg bg-white border-primary
+                        shadow-md hover:shadow-primary duration-200 hover:scale-95 sm:w-36">
+
+                        <img src="./asets/images/compas.jpg" alt="ventela"
+                        class="w-32 cursor-pointer px-8 py-4 border rounded-lg bg-white border-primary
+                        shadow-md hover:shadow-primary duration-200 hover:scale-95 sm:w-36">
+                        <img src="./asets/images/converse.png" alt="ventela"
+                        class="w-32 cursor-pointer px-8 py-2.5 border rounded-lg bg-white border-primary
+                        shadow-md hover:shadow-primary duration-200 hover:scale-95 sm:w-36">
+                    </div>
+                </div>
+
+                <div class="hidden px-4 lg:block lg:w-1/12"></div>
+
+                <div class="w-full px-4 lg:w-6/12">
+                    <div class="lg:ml-auto lg:text-right">
+                        <div class="relative z-10 inline-block pt-11 lg:pt-0">
+                            <img src="./asets/images/hero2.png" alt="Hero"
+                            class="max-w-full lg:ml-auto">
+
+                            <span class="absolute -bottom-10 -top-10 -z-10 left-1/2 -translate-x-1/2 md:scale-125 lg:-bottom-0 lg:top-0">
+                                <svg with="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#14b8a6" d="M36.3,-40.4C49.4,-32.2,64,-23,70.4,-9.1C76.9,4.9,75.1,23.6,64.5,32.7C53.8,41.8,34.3,41.2,18.8,43.1C3.3,45,-8.1,49.4,-19.6,47.9C-31.2,46.3,-42.7,38.8,-48,28.3C-53.3,17.9,-52.3,4.4,-49.4,-8.1C-46.5,-20.6,-41.5,-32.1,-33,-41.1C-24.4,-50.1,-12.2,-56.5,-0.3,-56.2C11.6,-55.8,23.2,-48.6,36.3,-40.4Z" 
+                                    transform="translate(100 100) scale(1.2)" />
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End hero section -->
+
+    <!-- section fitur -->
+    <section class="pb-16 dark:bg-dark">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+            <div class="mb-5 sm:mb-10">
+                <span class="font-medium text-primary lg:text-xl">Keunggulan Kami</span>
+                <h1 class="font-bold text-3xl text-slate-600 sm:text-4xl dark:text-white">Solusi Yang Kami Tawarkan</h1>
+            </div>
+
+            <div class="md:flex md:justify-between md:gap-6 xl:gap-10">
+                <div class="mb-5 max-h-[600px] overflow-hidden rounded-lg
+                    md:mb-0 md:w-5/12">
+                    <img src="./asets/images/fitur2.jpg" alt="fitur"
+                    class="scale-125 sm:w-full sm:object-cover">
+                </div>
+
+                <div class="md:w-7/12">
+                    <div class="flex flex-col mb-16">
+                        <p class="mb-3 text-slate-500 text-base text-justify"> 
+                            memberikan pelayanan yang ramah kepada mereka terkait kendala yang mereka alami terhadap sepatu mereka.
+                            Dalam rusaknya sepatu solusi yang kita tawarkan yaitu mereparasi rusak nya
+                            sepatu dengan cara merekatkan kembali bagian yang rusak / mengelupas.
+                        </p>
+                        <p class="mb-3 text-slate-500 text-base text-justify">
+                            Melakukan sebuah perawatan sepatu sesuai dengan permasalahan yang mereka alami yaitu 
+                            ketika sepatu mereka luntur / pudar warnanya biasanya kita mewarnai kembali (repaint) , baik itu di bahan suede, canvas dan leather(kulit)
+                        </p>
+
+                        <button type="button" class="bg-primary rounded-md px-8 w-full
+                            py-2.5 font-semibold text-base text-white hover:shadow-lg 
+                            hover:opacity-70 transition duration-200 ease-in-out lg:w-max">
+                            Get Strated
+                        </button>
+                    </div>
+
+                    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="flex flex-col items-center justify-center
+                            rounded-xl bg-white px-4 py-8 shadow-lg dark:bg-slate-800">
+                            <img src="./asets/images/smile.png" alt="Ramah" class="w-20 mb-3">
+                            <h3 class="text-lg font-bold text-slate-500">Ramah</h3>
+                        </div>
+                        <div class="flex flex-col items-center justify-center
+                            rounded-xl bg-white px-4 py-8 shadow-lg dark:bg-slate-800">
+                            <img src="./asets/images/setup.png" class="w-20 mb-3">
+                            <h3 class="text-lg font-bold text-slate-500">Reparasi</h3>
+                        </div>
+                        <div class="flex flex-col items-center justify-center
+                            rounded-xl bg-white px-4 py-8 shadow-lg dark:bg-slate-800">
+                            <img src="./asets/images/paint-tube.png" alt="Ramah" class="w-20 mb-3">
+                            <h3 class="text-lg font-bold text-slate-500">Repaint</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section fitur end -->
+
+    <!-- about section -->
+    <section id="about" class="py-16 dark:bg-dark">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+            <div class="md:flex md:justify-between md:gap-6">
+                <div class="md:w-6/12">
+                    <div class="mb-5 sm:mb-10 lg:mb-4">
+                        <span class="font-medium text-primary lg:text-xl">Tentang Kami</span>
+                        <h1 class="font-bold text-3xl text-slate-600 sm:text-4xl dark:text-white">UTM Clean Shoes and Care </h1>
+                    </div>
+                    <p class="mb-6 text-slate-500 text-base text-justify">
+                        UTM Clean Shoes Care and Clean adalah usaha bisnis yang berkecimpung dalam bidang jasa khususnya pada perawatan sepatu seperti mencuci, repaint, dan treatment.
+                        UTM Clean hadir dengan inovasi baru berupa website jasa pelayanan 
+                        sepatu yang bertujuan memberikan pelayanan pada customer dalam melakukan transaksi seperti melihat nomor resi, tracking order, hingga free delivery order.
+                    </p>
+                    <h1 class="font-bold text-3xl mb-3 text-slate-600 sm:text-4xl dark:text-white">Visi & Misi</h1>
+                    <ul>
+                        <li class="mb-5 flex items-center">
+                            <div class="flex h-[35px] min-w-[35px] w-[35px] items-center 
+                            justify-center rounded-full bg-primary text-white">
+                                <ion-icon name="cube"></ion-icon>
+                            </div>
+                            <p class="ml-4 max-w-md font-medium text-slate-500 text-justify">
+                                Menjadikan utmclean sebagai jasa pelayanan dan perawatan sepatu yang tetap
+                                mengedepankan kualitas dan prioritas utama pada setiap konsumen.
+                            </p>
+                        </li>
+                        <li class="mb-5 flex items-center">
+                            <div class="flex h-[35px] min-w-[35px] w-[35px] items-center 
+                            justify-center rounded-full bg-primary text-white">
+                                <ion-icon name="analytics"></ion-icon>
+                            </div>
+                            <p class="ml-4 max-w-md font-medium text-slate-500 text-justify">
+                                misi yang dilakukan utmclean agar para konsumen menikmati hasil jasa yang kami berikan.
+                            </p>
+                        </li>
+                        <li class="mb-5 flex items-center">
+                            <div class="flex h-[35px] min-w-[35px] w-[35px] items-center 
+                            justify-center rounded-full bg-primary text-white">
+                                <ion-icon name="contacts"></ion-icon>
+                            </div>
+                            <p class="ml-4 max-w-md font-medium text-slate-500 text-justify">
+                                Menjadikan pelanggan sebagai partner atau kerabat agar pelanggan merasa nyaman dalam pelayanan jasa yang dilakukan.
+                            </p>
+                        </li>
+                    </ul>
+                    <button type="button" class="bg-primary rounded-md px-8 w-full
+                            py-2.5 font-semibold text-base text-white hover:shadow-lg 
+                            hover:opacity-70 transition duration-200 ease-in-out lg:w-max">
+                            Get Strated
+                    </button>
+                </div>
+
+                <div class="mt-8 flex justify-center md:mt-0 md:w-5/12">
+                    <img src="./asets/images/about.png" alt="about" 
+                    class="max-h-[500px] md:max-h-max">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about section -->
+
+    <!-- section pelayanan -->
+    <section id="pelayanan" class="py-16 dark:bg-dark">
+        <div class="mx-auto m-w-7xl px-8 md:px-6">
+            <div class="mb-10 text-center lg:mb-4">
+                <span class="font-medium text-primary lg:text-xl">Pelayanan Kami</span>
+                <h1 class="font-bold text-3xl text-slate-600 sm:text-4xl dark:text-white">Memberikan Layanan Luar Biasa</h1>
+                <p class="mx-auto m-w-2 mt-2 text-slate-500 text-base">UTM Clean memberikan Layanan Treatent sebagai berikut </p>
+            </div>
+        
+            <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-2 xl:gap-2">
+                <div class="group flex cursor-pointer flex-col items-center
+                rounded-xl border border-primary shadow-lg bg-white 
+                py-8 px-5 hover:shadow-dark hover:bg-primary duration-200 dark:bg-slate-800 dark:hover:bg-primary">
+                    <ion-icon name="trash" class="text-[55px] text-primary
+                    duration-200 group-hover:text-white"></ion-icon>
+                    <h4 class="mt-3 mb-1 text-[17px] font-semibold
+                    text-slate-500 duration-200 group-hover:text-white">Cleaning Shoes</h4>
+                    <p class="text-center text-sm text-slate-400 duration-200
+                    group-hover:text-teal-200">
+                        pencucian sepatu secara cepat, pencucian sepatu secara menyeluruh mulai dari bagian bawah (outsole) , dalam (insole), pinggir (midsole) , atas (upper).
+                    </p>
+                </div>
+                <div class="flex cursor-pointer flex-col items-center
+                rounded-xl border border-primary shadow-lg bg-primary 
+                py-8 px-5 duration-200">
+                    <ion-icon name="repeat" class="text-[55px] text-white
+                    duration-200"></ion-icon>
+                    <h4 class="mt-3 mb-1 text-[17px] font-semibold
+                    text-white duration-200">Repaint</h4>
+                    <p class="text-center text-sm text-slate-200 duration-200">
+                    sebuah treatment mewarnai sepatu yang pudar dengan berbahan dasar kanvas, 
+                    suede, nubuck, kulit sintetis, kulit asli. 
+                    </p>
+                </div>
+                <div class="group flex cursor-pointer flex-col items-center
+                rounded-xl border border-primary shadow-lg bg-white 
+                py-8 px-5 hover:shadow-dark hover:bg-primary duration-200 dark:bg-slate-800 dark:hover:bg-primary">
+                    <ion-icon name="rose" class="text-[55px] text-primary
+                    duration-200 group-hover:text-white"></ion-icon>
+                    <h4 class="mt-3 mb-1 text-[17px] font-semibold
+                    text-slate-500 duration-200 group-hover:text-white">Reglue</h4>
+                    <p class="text-center text-sm text-slate-400 duration-200
+                    group-hover:text-teal-200">
+                    Metode tahapan treatment merekatkan sepatu yang rusak akibat lem yang sudah terkelupas.
+                    </p>
+                </div>
+                <div class="group flex cursor-pointer flex-col items-center
+                rounded-xl border border-primary shadow-lg bg-white 
+                py-8 px-5 hover:shadow-dark hover:bg-primary duration-200 dark:bg-slate-800 dark:hover:bg-primary">
+                    <ion-icon name="nuclear" class="text-[55px] text-primary
+                    duration-200 group-hover:text-white"></ion-icon>
+                    <h4 class="mt-3 mb-1 text-[17px] font-semibold
+                    text-slate-500 duration-200 group-hover:text-white">Unyellowing</h4>
+                    <p class="text-center text-sm text-slate-400 duration-200
+                    group-hover:text-teal-200">
+                    Metode ini yaitu sebuah perawatan sepatu yang biasanya di bagian pinggiran sepatu(midsole) itu berubah warna yang tadinya putih menjadi ke kuning kuningan
+                    . Maka perawatan unyellowing ini berfungsi untuk menghilangkan noda kuning kuning yang ada pada pinggiran sepatu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section pelayanan -->
+
+
+    <!-- section protofolio -->
+    <section id="protofolio" class="py-16 dark:bg-dark">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+            <div class="mb-10 text-center lg:mb-4">
+                <span class="font-medium text-primary lg:text-xl">Protofolio Kami</span>
+                <h1 class="font-bold text-3xl text-slate-600 sm:text-4xl dark:text-white">Bukti Foto Produk Kami</h1>
+                <p class="mx-auto m-w-2 mt-2 text-slate-500 text-base">berikut merupakan foto dari pengerjaan kami</p>
+            </div>
+            <div class="flex flex-col gap-5">
+                <!-- kolom 1 -->
+                <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-4">
+                    <div class="group relative h-40 overflow-hidden rounded-lg 
+                        lg:-h-52">
+                        <img src="./asets/images/sepatu1.jpg" alt="before"
+                        class="absolute object-cover duration-200
+                        group-hover:scale-125">
+                        <div class="absolute -bottom-60 flex w-full cursor-pointer
+                        items-center justify-between bg-gradient-to-t from-slate-800
+                        px-3 pb-4 pt-10 duration-200 group-hover:-bottom-0">
+                            <p class="font-semibold text-sm text-white">Before
+                                <span class="text-xs font-medium text-slate-300 block">Adidas</span>
+                            </p>
+                            <ion-icon name="heart" class="rounded-full bg-white
+                            p-1.5 text-lg text-primary"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="group relative h-40 overflow-hidden rounded-lg 
+                        lg:-h-52">
+                        <img src="./asets/images/sepatu2.jpg" alt="before"
+                        class="absolute object-cover duration-200
+                        group-hover:scale-125">
+                        <div class="absolute -bottom-60 flex w-full cursor-pointer
+                        items-center justify-between bg-gradient-to-t from-slate-800
+                        px-3 pb-4 pt-10 duration-200 group-hover:-bottom-0">
+                            <p class="font-semibold text-sm text-white">After
+                                <span class="text-xs font-medium text-slate-300 block">Adidas</span>
+                            </p>
+                            <ion-icon name="heart" class="rounded-full bg-white
+                            p-1.5 text-lg text-primary"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="group relative h-40 overflow-hidden rounded-lg 
+                        lg:-h-52 sm:col-span-2">
+                        <img src="./asets/images/sepatu4.jpg" alt="before"
+                        class="absolute object-cover duration-200 lg:max-h-[200px] 
+                        lg:w-full group-hover:scale-125">
+                        <div class="absolute -bottom-60 flex w-full cursor-pointer
+                        items-center justify-between bg-gradient-to-t from-slate-800
+                        px-3 pb-4 pt-10 duration-200 group-hover:-bottom-0">
+                            <p class="font-semibold text-sm text-white">Alat Pembersih 
+                                <span class="text-xs font-medium text-slate-300 block">Brush</span>
+                            </p>
+                            <ion-icon name="heart" class="rounded-full bg-white
+                            p-1.5 text-lg text-primary"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <!-- end kolom 1 -->
+
+                <!-- kolom 2 -->
+                <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
+                    <div class="group relative h-40 overflow-hidden rounded-lg 
+                        lg:-h-52 md:col-span-2">
+                        <img src="./asets/images/sepatu7.jpg" alt="before"
+                        class="absolute object-cover duration-200
+                        group-hover:scale-125">
+                        <div class="absolute -bottom-60 flex w-full cursor-pointer
+                        items-center justify-between bg-gradient-to-t from-slate-800
+                        px-3 pb-4 pt-10 duration-200 group-hover:-bottom-0">
+                            <p class="font-semibold text-sm text-white">After
+                                <span class="text-xs font-medium text-slate-300 block">Ventela</span>
+                            </p>
+                            <ion-icon name="heart" class="rounded-full bg-white
+                            p-1.5 text-lg text-primary"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="group relative h-40 overflow-hidden rounded-lg 
+                        lg:-h-52">
+                        <img src="./asets/images/sepatu6.jpg" alt="before"
+                        class="absolute object-cover duration-200
+                        group-hover:scale-125">
+                        <div class="absolute -bottom-60 flex w-full cursor-pointer
+                        items-center justify-between bg-gradient-to-t from-slate-800
+                        px-3 pb-4 pt-10 duration-200 group-hover:-bottom-0">
+                            <p class="font-semibold text-sm text-white">Cleaning
+                                <span class="text-xs font-medium text-slate-300 block">Pegawai</span>
+                            </p>
+                            <ion-icon name="heart" class="rounded-full bg-white
+                            p-1.5 text-lg text-primary"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <!-- end kolom 2 -->
+
+                <!-- kolom 3 -->
+                <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-4">
+                    <div class="group relative h-40 overflow-hidden rounded-lg 
+                        lg:-h-52">
+                        <img src="./asets/images/sepatu5.jpg" alt="before"
+                        class="absolute object-cover duration-200
+                        group-hover:scale-125">
+                        <div class="absolute -bottom-60 flex w-full cursor-pointer
+                        items-center justify-between bg-gradient-to-t from-slate-800
+                        px-3 pb-4 pt-10 duration-200 group-hover:-bottom-0">
+                            <p class="font-semibold text-sm text-white">Cleaning
+                                <span class="text-xs font-medium text-slate-300 block">Pegawai</span>
+                            </p>
+                            <ion-icon name="heart" class="rounded-full bg-white
+                            p-1.5 text-lg text-primary"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="group relative h-40 overflow-hidden rounded-lg 
+                        lg:-h-52">
+                        <img src="./asets/images/sepatu3.jpg" alt="before"
+                        class="absolute object-cover duration-200
+                        group-hover:scale-125">
+                        <div class="absolute -bottom-60 flex w-full cursor-pointer
+                        items-center justify-between bg-gradient-to-t from-slate-800
+                        px-3 pb-4 pt-10 duration-200 group-hover:-bottom-0">
+                            <p class="font-semibold text-sm text-white">After
+                                <span class="text-xs font-medium text-slate-300 block">Adidas</span>
+                            </p>
+                            <ion-icon name="heart" class="rounded-full bg-white
+                            p-1.5 text-lg text-primary"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="group relative h-40 overflow-hidden rounded-lg 
+                        lg:-h-52 sm:col-span-2">
+                        <img src="./asets/images/sepatu8.jpg" alt="before"
+                        class="absolute object-cover duration-200 lg:max-h-[200px] 
+                        lg:w-full group-hover:scale-125">
+                        <div class="absolute -bottom-60 flex w-full cursor-pointer
+                        items-center justify-between bg-gradient-to-t from-slate-800
+                        px-3 pb-4 pt-10 duration-200 group-hover:-bottom-0">
+                            <p class="font-semibold text-sm text-white">After 
+                                <span class="text-xs font-medium text-slate-300 block">Sepatu kulit</span>
+                            </p>
+                            <ion-icon name="heart" class="rounded-full bg-white
+                            p-1.5 text-lg text-primary"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <!-- end kolom 3 -->
+            </div>
+        </div>
+    </section>
+    <!-- end section protofolio -->
+
+    <!-- testimoni section -->
+    <section id="testimoni" class="py-16 dark:bg-dark">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+            <div class="mb-5 sm:mb-10 lg:mb-4">
+                <span class="font-medium text-primary lg:text-xl">Testimoni</span>
+                <h1 class="font-bold text-3xl text-slate-600 sm:text-4xl dark:text-white">Foto Customer di Toko dan AntarJemput</h1>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:gap-10">
+                <div class="w-full duration-200 hover:scale-95">
+                    <div class="max-h-72 w-full overflow-hidden rounded-t-xl">
+                        <img src="./asets/images/testi1.jpg" alt="customer1" class="w-full">
+                    </div>
+                    <div class="rounded-b-xl px-5 pb-5 pt-3 shadow-md shadow-teal-500/10 dark:shadow-slate-600">
+                        <div class="">
+                            <a href="#" class="mr-2 rounded-md bg-teal-50
+                            px-3 py-1 text-sm text-slate-600">Cleaning Shoes</a>
+                            <a href="" class="block pt-4 font-medium capitalize
+                            text-slate-800 hover:text-primary dark:text-slate-500">salah satu customer kita ini mengalami masalah
+                                pada sepatunya yang kotor dan susah dibersihkan akibat noda yang membandel.
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="my-4 border-slate-100 dark:border-none">
+                    <div class="flex">
+                        <img src="./asets/images/testi1.jpg" alt=""
+                        class="mr-3 h-10 w-10 rounded-full object-cover">
+                        <p class="font-semibold text-sm capitalize text-dark dark:text-white">
+                            Zaki Ardiansyah 
+                            <span class="block text-xs text-slate-500
+                            ">Customer</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full duration-200 hover:scale-95">
+                    <div class="max-h-72 w-full overflow-hidden rounded-t-xl">
+                        <img src="./asets/images/testi2.jpg" alt="customer1" class="w-full">
+                    </div>
+                    <div class="rounded-b-xl px-5 pb-5 pt-3 shadow-md shadow-teal-500/10 dark:shadow-slate-600">
+                        <div class="">
+                            <a href="#" class="mr-2 rounded-md bg-teal-50
+                            px-3 py-1 text-sm text-slate-600">Cleaning Shoes</a>
+                            <a href="#" class="mr-2 rounded-md bg-teal-50
+                            px-3 py-1 text-sm text-slate-600">Repaint</a>
+                            <a href="" class="block pt-4 font-medium capitalize
+                            text-slate-800 dark:text-slate-500 hover:text-primary">customer kita selanjutnya ini mengalami dua permasalahan
+                                pada sepatunya yakni kotor dan warna pada sepatunya mengalami pudar.
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="my-4 border-slate-100 dark:border-none">
+                    <div class="flex">
+                        <img src="./asets/images/testi2.jpg" alt=""
+                        class="mr-3 h-10 w-10 rounded-full object-cover">
+                        <p class="font-semibold text-sm capitalize text-dark dark:text-white">
+                            rendi firmansyah 
+                            <span class="block text-xs text-slate-500
+                            ">Customer</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full duration-200 hover:scale-95">
+                    <div class="max-h-72 w-full overflow-hidden rounded-t-xl">
+                        <img src="./asets/images/testi3.jpg" alt="customer1" class="w-full">
+                    </div>
+                    <div class="rounded-b-xl px-5 pb-5 pt-3 shadow-md shadow-teal-500/10 dark:shadow-slate-600">
+                        <div class="">
+                            <a href="#" class="mr-2 rounded-md bg-teal-50
+                            px-3 py-1 text-sm text-slate-600">Cleaning Shoes</a>
+                            <a href="#" class="mr-2 rounded-md bg-teal-50
+                            px-3 py-1 text-sm text-slate-600">Reglue</a>
+                            <a href="" class="block pt-4 font-medium capitalize
+                            text-slate-800 hover:text-primary dark:text-slate-500">permasalahan yang dialami oleh customer kali ini yaitu 
+                                sepatu kotor dan lem pada sepatunya sudah terkelupas
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="my-4 border-slate-100 dark:border-none">
+                    <div class="flex">
+                        <img src="./asets/images/testi3.jpg" alt=""
+                        class="mr-3 h-10 w-10 rounded-full object-cover">
+                        <p class="font-semibold text-sm capitalize text-dark dark:text-white">
+                             putri nurdi intari
+                            <span class="block text-xs text-slate-500
+                            ">Customer COD</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end testimoni section -->
+
+    <!-- section contact -->
+    <section id="contact" class="relative overflow-hidden py-16 dark:bg-dark">
+        <img src="./asets/images/effect.png" alt="effect"
+        class="absolute bottom-[-400px] -z-10 w-full opacity-[0.2]">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+            <div class="-mx-4 flex flex-wrap lg:justify-between">
+                <!-- left -->
+                <div class="w-full px-4 md:w-1/2 lg:w-6/12">
+                    <div class="mb-12 max-w-[570px] lg:mb-0">
+                        <span class="capitalize font-medium text-primary lg:text-xl">kontak kami</span>
+                        <h1 class="text-3xl font-bold mb-3 text-slate-600 sm:text-4xl dark:text-white">Hubungi Kami</h1>
+                        
+                        <div class="mb-8 flex w-full max-w-[420px] items-center
+                                rounded-lg bg-white dark:bg-slate-800 shadow-md p-4 shadow-teal-100 dark:shadow-slate-600">
+                            <div class="mr-6 flex h-[60px] w-fullmax-w-[60px]
+                                items-center justify-center overflow-hidden rounded
+                                text-primary sm:h-[70px] sm:max-w-[70px]">
+                                <ion-icon name="pin" class="text-3xl"></ion-icon>
+                            </div>
+
+                            <div class="w-full">
+                                <h4 class="text-xl font-bold text-dark dark:text-white">Lokasi Kami</h4>
+                                <a href="QVF5+7C Kebon Baru, South Jakarta City, Jakarta"
+                                class="text-sm text-slate-400">
+                                    Jl. Asem Baris Raya No.37, RT.1/RW.5, Kb. Baru, Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12830
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mb-8 flex w-full max-w-[420px] items-center
+                                rounded-lg bg-white dark:bg-slate-800 shadow-md p-4 shadow-teal-100 dark:shadow-slate-600">
+                            <div class="mr-6 flex h-[60px] w-fullmax-w-[60px]
+                                items-center justify-center overflow-hidden rounded
+                                text-primary sm:h-[70px] sm:max-w-[70px]">
+                                <ion-icon name="logo-whatsapp" class="text-3xl"></ion-icon>
+                            </div>
+
+                            <div class="w-full">
+                                <h4 class="text-xl font-bold text-dark dark:text-white">Nomor Whatsapp</h4>
+                                <a href="https://api.whatsapp.com/send?phone=6289603174377"
+                                class="text-sm text-slate-400">
+                                    089603174377
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mb-8 flex w-full max-w-[420px] items-center
+                                rounded-lg bg-white dark:bg-slate-800 shadow-md p-4 shadow-teal-100 dark:shadow-slate-600">
+                            <div class="mr-6 flex h-[60px] w-fullmax-w-[60px]
+                                items-center justify-center overflow-hidden rounded
+                                text-primary sm:h-[70px] sm:max-w-[70px]">
+                                <ion-icon name="logo-instagram" class="text-3xl"></ion-icon>
+                            </div>
+
+                            <div class="w-full">
+                                <h4 class="text-xl font-bold text-dark dark:text-white">Instagram</h4>
+                                <a href="https://www.instagram.com/utmclean.jkt/"
+                                class="text-sm text-slate-400">
+                                @utmclean.jkt
+                                <span class="block">@utm_clean</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right -->
+                <div class="w-full px-4 md:w-1/2 lg:w-6/12">
+                    <div class="relative rounded-lg shadow-md bg-white dark:bg-dark p-8
+                        shadow-teal-500/10 sm:p-12">
+                        <form action="">
+                            <div class="mb-6">
+                                <input type="text" class="w-full rounded-lg border 
+                                border-teal-500/10 px-4 py-3 bg-slate-100 dark:text-white dark:bg-slate-600
+                                focus:border-primary focus:outline-none" placeholder="Name">
+                            </div>
+                            <div class="mb-6">
+                                <input type="email" class="w-full rounded-lg border 
+                                border-teal-500/10 px-4 py-3 bg-slate-100 dark:text-white dark:bg-slate-600
+                                focus:border-primary focus:outline-none" placeholder="Email">
+                            </div>
+                            <div class="mb-6">
+                                <input type="password" class="w-full rounded-lg border 
+                                border-teal-500/10 px-4 py-3 bg-slate-100 dark:text-white dark:bg-slate-600
+                                focus:border-primary focus:outline-none" placeholder="Password">
+                            </div>
+                            <div class="mb-6">
+                                <textarea name="message" id="" rows="6" class="w-full rounded-lg border 
+                                border-teal-500/10 px-4 py-3 bg-slate-100 dark:text-white dark:bg-slate-600
+                                focus:border-primary focus:outline-none"></textarea>
+                            </div>
+                            <div class="">
+                                <button type="submit" class="w-full bg-primary rounded text-white
+                                    p-3 font-semibold hover:shadow-lg hover:opacity-70 transition duration-200 ease-in-out">
+                                    Kirim Pesan
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section contact -->
+
+    <!-- section footer -->
+    <footer class="bg-slate-50/80 pt-16 dark:bg-dark">
+        <div class="mx-auto m-w-7xl px-8 md:px-6">
+            <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
+                <div class="md:max-w-md lg:col-span-2">
+                    <img src="./asets/images/logo.jpeg" class="w-20" alt="footer logo">
+                    <div class="mt-4 lg:max-w-sm">
+                        <p class="text-sm text-slate-500">
+                            UTM Clean Shoes Care and Clean adalah usaha bisnis yang berkecimpung dalam bidang jasa khususnya pada perawatan sepatu seperti mencuci, repaint, dan treatment.
+                        </p>
+                        <p class="mt-2 text-sm text-slate-500">
+                            UTM Clean hadir dengan inovasi baru berupa website jasa pelayanan sepatu yang bertujuan memberikan pelayanan pada customer dalam melakukan transaksi seperti melihat nomor resi, tracking order, hingga free delivery order. 
+                        </p>
+                    </div>
+                </div>
+                <div class="grid row-gap-8 grid-cols-2 gap-5 md:grid-cols-4
+                    lg:col-span-4">
+                    <div class="">
+                        <p class="font-semibold text-dark dark:text-white">Mitra Kami</p>
+                        <ul class="mt-2 space-y-2">
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">KSJ Official Store </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Spotless </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Octopus</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Qaqiqu official shop </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Sablon Plastik </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <p class="font-semibold text-dark dark:text-white">Businnes</p>
+                        <ul class="mt-2 space-y-2">
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Protofolio</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Web</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <p class="font-semibold text-dark dark:text-white">Pelayanan Kami</p>
+                        <ul class="mt-2 space-y-2">
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Cleaning Shoes</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Repaint</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Reglue</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Unyellowing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <p class="font-semibold text-dark dark:text-white">Paket Customer</p>
+                        <ul class="mt-2 space-y-2">
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Medium brush</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Hard bush</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Cairan cleaner</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-500 transition-colors duration-200 hover:text-primary">Parfum</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end section footer -->
+
+    <!-- tombol top -->
+    <a href="#home" id="to-top" class="fixed hidden p-4 h-14 w-14 rounded-full bg-slate-200 bottom-4
+        right-4 z-[9999] items-center justify-center hover:animate-pulse">
+        <span class="block h-5 w-5 mt-2 border-primary border-t-2 border-l-2 rotate-45"></span>
+    </a>
+    <!-- end tombol top -->
+    
+    <script src="./asets/js/main.js"></script>
+</body>
+</html>
