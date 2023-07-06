@@ -1200,6 +1200,10 @@ video {
   padding-top: 4rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1462,6 +1466,16 @@ body{
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-slate-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-slate-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary:hover {
@@ -1828,6 +1842,10 @@ body{
 
   .lg\:text-right {
     text-align: right;
+  }
+
+  .lg\:text-justify {
+    text-align: justify;
   }
 
   .lg\:text-\[40px\] {
