@@ -1017,10 +1017,6 @@ video {
   background-color: transparent;
 }
 
-.bg-current {
-  background-color: currentColor;
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
